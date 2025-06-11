@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { DateTimeIso8601 } from '../src/main'
+import { DateTimeIso8601 } from '../src'
 import type { ParsedTimeComponents } from '../src/types'
 
 const validIso = '2024-06-01T12:34:56+02:00'
