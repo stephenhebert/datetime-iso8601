@@ -1,0 +1,57 @@
+{
+  "name": "@stephenhebert/datetime-iso8601",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A small library to simplify parsing and timezone conversion of computer date formats",
+  "license": "MIT",
+  "homepage": "https://github.com/stephenhebert/datetime-iso8601",
+  "bugs": {
+    "url": "https://github.com/stephenhebert/datetime-iso8601"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenhebert/datetime-iso8601"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "/dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "npx tsc && vite build",
+    "release": "npx bumpp package.json --commit \"release: v\" --push --tag",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@stylistic/eslint-plugin": "^4.4.0",
+    "eslint": "^9.28.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1",
+    "vite": "^6.3.5",
+    "vitest": "^3.2.3"
+  },
+  "keywords": [
+    "date",
+    "timezone",
+    "intl",
+    "i10n",
+    "typescript",
+    "javascript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
